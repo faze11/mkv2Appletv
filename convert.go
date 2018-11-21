@@ -158,7 +158,7 @@ func convertSource(in string, output string) {
 	if output != "" {
 		ffmpegCmd.outFile = output
 	} else {
-		ffmpegCmd.outFile = fmt.Sprintf(" %s.mp4", in)
+		ffmpegCmd.outFile = fmt.Sprintf("%s.mp4", in)
 	}
 
 	ffmpegCmd.setupHeader()
